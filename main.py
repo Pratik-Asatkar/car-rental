@@ -38,6 +38,7 @@ def home():
     return render_template('home.html', featured=featured)
 
 
+
 @app.route('/profile')
 @jwt_required(locations='cookies')
 def profile():

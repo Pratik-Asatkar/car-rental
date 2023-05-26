@@ -11,7 +11,7 @@
                 <div class="	">
                   <div class="">
                     <div class="align-items-center">
-                      <form action="{{ url_for('auth.register') }}" class="request-form ftco-animate bg-primary">
+                      <form action="{{ url_for('auth.register') }}" method="post" class="request-form ftco-animate bg-primary">
                         <h2>Register</h2>
                         <div class="form-group">
                           <label for="name" class="label">Name</label>
@@ -35,7 +35,7 @@
                           <input type="number" id="pincode" name="pincode" class="form-control"  placeholder="pincode">
                         </div>
                         <div class="form-group">
-                          <input type="submit" value="Rent A Car Now" class="btn btn-secondary py-3 px-4">
+                          <button type="submit" class="btn btn-secondary py-3 px-4">Register</button>
                         </div>
                       </form>
                       <p class="text-center mt-4">
