@@ -1,0 +1,116 @@
+{% extends "base.html" %} {% block content %}
+<div
+  class="hero-wrap ftco-degree-bg"
+  style="background-image: url('static/images/bg_1.jpg')"
+  data-stellar-background-ratio="0.5"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div
+      class="row no-gutters slider-text justify-content-start align-items-center justify-content-center"
+    >
+      <div class="col-lg-8 ftco-animate">
+        <div class="text text-center mb-md-5 pb-md-5">
+          <div class="">
+            <div class="	">
+              <div class="">
+                <div class="align-items-center">
+                  <form
+                    action="{{ url_for('product.add_product') }}"
+                    enctype="multipart/form-data"
+                    class="request-form ftco-animate bg-primary"
+                  >
+                    <h2>Add Cars</h2>
+                    <div class="form-group">
+                      <label for="product-name" class="label">Car Title</label>
+                      <input
+                        type="text"
+                        id="product-name"
+                        name="name"
+                        class="form-control"
+                        placeholder="Enter Your Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="product-description" class="label"
+                        >Short Description</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="product-description"
+                        placeholder="Product Description"
+                        name="short_desc"
+                      ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="product-description" class="label"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="description"
+                        placeholder="Product Description"
+                        name="description"
+                      ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Category" class="label">Category</label>
+                      <input
+                        id="category"
+                        type="text"
+                        name="category"
+                        class="form-control"
+                        placeholder="Category of Car"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label
+                        class="block text-gray-700 text-sm font-bold mb-2"
+                        for="product-price"
+                      >
+                        Product Price
+                      </label>
+                      <input
+                        class="form-control"
+                        id="product-price"
+                        type="number"
+                        name="price"
+                        placeholder="Product Price"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label
+                        class="block text-gray-700 text-sm font-bold mb-2"
+                        for="product-image"
+                      >
+                        Product Image
+                      </label>
+                      <input
+                        class="form-control"
+                        id="product-image"
+                        type="file"
+                        name="img"
+                        accept=".jpg,.jpeg,.png"
+                      />
+                    </div>
+                    <div class="form-group">
+                        <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit">
+                        Add Product
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

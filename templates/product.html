@@ -28,10 +28,11 @@
     <div class="row justify-content-center">
       <div class="col-md-12">
         <div class="car-details">
-          <img src="{{ product['img'] }}" alt="{{ product['name'] }}" class="img rounded">
+          <img src="{{ product['img'] }}" alt="{{ product['name'] }}" class="img-fluid rounded">
           <div class="text text-center">
             <span class="subheading">brand</span>
             <h2>{{ product['name'] }}</h2>
+            <span class="subheading">₹{{ product['price'] }} /day</span>
           </div>
         </div>
       </div>
@@ -93,45 +94,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md d-flex align-self-stretch ftco-animate">
-        <div class="media block-6 services">
-          <div class="media-body py-md-4">
-            <div class="d-flex mb-3 align-items-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-backpack"></span>
-              </div>
-              <div class="text">
-                <h3 class="heading mb-0 pl-3">
-                  Luggage
-                  <span>4 Bags</span>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md d-flex align-self-stretch ftco-animate">
-        <div class="media block-6 services">
-          <div class="media-body py-md-4">
-            <div class="d-flex mb-3 align-items-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="flaticon-diesel"></span>
-              </div>
-              <div class="text">
-                <h3 class="heading mb-0 pl-3">
-                  Fuel
-                  <span>Petrol</span>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-12">
